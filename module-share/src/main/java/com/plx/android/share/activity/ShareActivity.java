@@ -11,7 +11,7 @@ import com.plx.android.share.R;
  * Created by plx on 19/4/21.
  */
 
-@Route(paths = {"/share/1", "/share/3333"})
+@Route(paths = {"/share/1", "/share2/1", "/share/3333"})
 public class ShareActivity extends Activity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
