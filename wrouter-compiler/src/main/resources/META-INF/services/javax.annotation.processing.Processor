@@ -1,0 +1,3 @@
+com.plx.android.compiler.processer.RouteProcessor
+com.plx.android.compiler.processer.AutowiredProcessor
+com.plx.android.compiler.processer.InterceptorProcessor
