@@ -1,0 +1,1 @@
+include ':app', ':sharelib', ':wrouter-annotation', ':wrouter-compiler', ':wrouter-api', ':buildSrc'

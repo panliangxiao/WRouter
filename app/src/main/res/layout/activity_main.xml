@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    tools:context="com.plx.android.app.MainActivity">
+
+    <Button
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="初始化路由" />
+    <Button
+        android:id="@+id/buttonPanel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开日志"
+        />
+
+    <Button
+        android:id="@+id/buttonPanel3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭路由"
+        />
+
+    <Button
+        android:id="@+id/buttonPanel4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试跳转"
+        />
+
+    <Button
+        android:id="@+id/buttonPanel5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试多路径跳转"
+        />
+
+</LinearLayout>

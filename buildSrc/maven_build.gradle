@@ -1,0 +1,22 @@
+apply plugin: 'maven'
+
+ext {
+    // 这个路径是从Github上Clone的本地路径
+    GITHUB_REPO_PATH = "/Users/plx/androidworkspace/wrouter-register"
+    // 在用到的代码上依赖的代码compile 'com.android.wrouter:register:1.0.1'
+    PUBLISH_GROUP_ID = 'com.android.wrouter'
+    PUBLISH_ARTIFACT_ID = 'register'
+    PUBLISH_VERSION = '1.0.1'
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        def deployPath = file(project.GITHUB_REPO_PATH)
+        repository(url: "file://${deployPath.absolutePath}")
+        pom.project {
+            groupId project.PUBLISH_GROUP_ID
+            artifactId project.PUBLISH_ARTIFACT_ID
+            version project.PUBLISH_VERSION
+        }
+    }
+}
